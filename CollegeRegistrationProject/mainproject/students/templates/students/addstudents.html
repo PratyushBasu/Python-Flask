@@ -1,0 +1,19 @@
+{# student addition page #}
+
+{% extends "base.html" %}
+
+{% block title %}
+	<title>Add Student</title>
+{% endblock %}
+
+{% block content %}
+	<div class="jumbotron">
+		<h1>This page is for adding a student to A2Z college database</h1>
+		<p style="font-weight: bold">To add a student's information, use the below form</p>
+		<form method="POST">
+			{{ form.hidden_tag() }}
+			{{ form.name.label }} {{ form.name }}
+			{{ form.submit }}
+		</form>
+	</div>
+{% endblock %}

@@ -1,0 +1,22 @@
+{# Add department for students page #}
+
+{% extends "base.html" %}
+
+{% block title %}
+	<title>Department/Student</title>
+{% endblock %}
+
+{% block content %}
+	<div class="jumbotron">
+		<h1>This page is for enrolling a student under a department</h1>
+	</div>
+	<p style="font-weight: bold">To add a student/department information, use the below form</p>
+	<form method="POST">
+		{{ form.hidden_tag() }}
+		{{ form.student_id.label }} {{ form.student_id }}
+		<br>
+		{{ form.dept.label }} {{ form.dept }}
+		<br>
+		{{ form.submit }}
+	</form>
+{% endblock %}

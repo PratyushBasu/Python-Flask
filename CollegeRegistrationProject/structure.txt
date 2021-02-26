@@ -1,0 +1,34 @@
+CollegeRegistrationProject Blueprint
+
+
+├───app.py # main app.py file to be called to start server for web app
+├───requirements.txt # File of pip install statements for your app
+├───migrations # folder created for migrations by calling
+├───CollegeRegistrationProject # main project folder, sub-components will be in separate folders
+│   │   data.sqlite
+│   │   models.py
+│   │   __init__.py
+│   │
+│   ├───departments
+│   │   │   forms.py
+│   │   │   views.py
+│   │   │
+│   │   ├───templates
+│   │       └───departments
+│   │               adddepartment.html
+│   │   
+│   │
+│   ├───students
+│   │   │   forms.py
+│   │   │   views.py
+│   │   │
+│   │   ├───templates
+│   │   │   └───students
+│   │   │           addstudents.html
+│   │   │           deletestudents.html
+│   │   │           liststudents.html
+│   │
+│   ├───static # Where you store your CSS, JS, Images, Fonts, etc... (if applicable)
+│   ├───templates
+│          base.html
+│          home.html

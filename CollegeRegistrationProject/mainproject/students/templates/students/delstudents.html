@@ -1,0 +1,19 @@
+{# student deletion page #}
+
+{% extends "base.html" %}
+
+{% block title %}
+	<title>Remove Student</title>
+{% endblock %}
+
+{% block content %}
+	<div class="jumbotron">
+		<h1>This page is for deleting a student from A2Z college database</h1>
+		<p style="font-weight: bold">To remove a student's information, use the below form</p>
+		<form method="POST">
+			{{ form.hidden_tag() }}
+			{{ form.id.label }} {{ form.id }}
+			{{ form.submit }}
+		</form>
+	</div>
+{% endblock %}
